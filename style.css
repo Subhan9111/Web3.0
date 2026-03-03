@@ -1,0 +1,155 @@
+body {
+  margin-left: 0;
+  font-family: "IM FELL Great Primer", serif;
+}
+
+main {
+}
+
+#startContent {
+  display: flex;
+  margin: auto;
+  max-width: 1100px;
+  padding: 4%;
+  gap: 4%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#startBilde {
+  flex: 1;
+}
+
+#startBilde img {
+  width: 90%;
+  border-radius: 25px;
+  height: 90%;
+  object-fit: cover;
+}
+
+#StartTekst {
+  flex: 1;
+  background-color: #d9d9d9;
+  border-radius: 25px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#Navn {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+#omMeg {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+#scrollBtn {
+  position: absolute;
+  bottom: -55px;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+#scrollBtn:hover {
+  background: #f40000;
+}
+
+#CV {
+  /* min-height: 100vh; */
+  display: flex;
+  /* align-content: flex-start flex-end; */
+  justify-content: center;
+  padding: 6% 4%;
+  gap: 4%;
+  max-width: 1200px;
+  height: 250vh;
+}
+
+#VenstreSide {
+  background-color: lightgray;
+  flex: 1;
+  border-radius: 25px;
+  padding: 25px;
+  position: sticky;
+  top: 10px;
+  height: fit-content;
+
+  /* padding: 6%; */
+  /* display: flex; */
+  /* gap: 25px; */
+}
+
+#CVBilde img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+
+#AlleInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#AlleInfo > div {
+  flex-basis: 50px;
+  flex-grow: 1;
+}
+.infoBox {
+  background: black;
+  display: flex;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+#HøyereSide {
+  flex: 2;
+}
+
+#HøyereSide h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.Erfaring,
+.Utdannelse,
+.Språk {
+  background: #e5e5e5;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+
+.Erfaring h3,
+.Utdannelse h3,
+.Språk h3 {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+.Erfaring h4 {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.Erfaring h6,
+.Utdannelse h6 {
+  font-size: 0.95rem;
+  font-weight: normal;
+  line-height: 1.6;
+}
