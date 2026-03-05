@@ -1,9 +1,11 @@
 body {
-  margin-left: 0;
+  margin: 0;
   font-family: "IM FELL Great Primer", serif;
+  background-color: #f5f5f5;
 }
 
 main {
+  background: darkgrey;
 }
 
 #startContent {
@@ -37,6 +39,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 #Navn {
@@ -51,7 +54,7 @@ main {
 
 #scrollBtn {
   position: absolute;
-  bottom: -55px;
+  bottom: -35px;
   left: 50%;
   width: 60px;
   height: 60px;
@@ -62,20 +65,20 @@ main {
   font-size: 2rem;
   cursor: pointer;
   transition: 0.3s ease;
+  justify-content: center;
+  left: 250px;
 }
 #scrollBtn:hover {
-  background: #f40000;
+  background: lightslategray;
 }
 
 #CV {
-  /* min-height: 100vh; */
   display: flex;
-  /* align-content: flex-start flex-end; */
   justify-content: center;
   padding: 6% 4%;
   gap: 4%;
   max-width: 1200px;
-  height: 250vh;
+  margin: auto;
 }
 
 #VenstreSide {
@@ -96,13 +99,14 @@ main {
   width: 100%;
   object-fit: cover;
   border-radius: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+  height: 400px;
 }
 
 #AlleInfo {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 2px;
 }
 
 #AlleInfo > div {
@@ -119,8 +123,15 @@ main {
   text-align: center;
   justify-content: center;
 }
+.infoBox:hover {
+  background: lightslategray;
+  transform: translateY(-3px);
+  cursor: pointer;
+}
 #HøyereSide {
   flex: 2;
+  display: flex;
+  flex-direction: column;
 }
 
 #HøyereSide h2 {
@@ -129,7 +140,8 @@ main {
 }
 .Erfaring,
 .Utdannelse,
-.Språk {
+.Språk,
+.Ferdigheter {
   background: #e5e5e5;
   padding: 20px;
   border-radius: 20px;
@@ -138,7 +150,8 @@ main {
 
 .Erfaring h3,
 .Utdannelse h3,
-.Språk h3 {
+.Språk h3,
+.Ferdigheter h3 {
   font-size: 1.2rem;
   margin-bottom: 25px;
 }
@@ -148,8 +161,28 @@ main {
   font-weight: bold;
 }
 .Erfaring h6,
-.Utdannelse h6 {
+.Utdannelse h6,
+.Språk h6,
+.Ferdigheter h6 {
   font-size: 0.95rem;
   font-weight: normal;
   line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  #startContent {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  #startBilde img {
+    width: 100%;
+    height: auto;
+  }
+  #StartTekst {
+    padding: 30px;
+  }
+  #Navn {
+    font-size: 2.5rem;
+  }
 }
