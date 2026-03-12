@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Subhan sin CV</title>
   </head>
   <body>
     <main>
@@ -13,6 +13,7 @@
           <img src="/bilder/Subhan_portrett.jpeg" alt="" />
         </div>
         <div id="StartTekst">
+          <button id="DarkMode">Dark mode 🌙</button>
           <h1 id="Navn">Mohammed Subhan Nehman Saddique</h1>
           <p id="omMeg">
             Jeg er elev på F21 1IM og har stor interesse for
@@ -26,24 +27,26 @@
           </p>
           <button onclick="scrollNed()" id="scrollBtn">↓</button>
         </div>
-        
       </div>
-      
 
-      <div id="CV">
+      <section id="CV">
         <div id="VenstreSide">
           <div id="CVBilde">
             <img src="/bilder/CV.jpeg" alt="" />
           </div>
           <div id="AlleInfo">
-            <a href="tel:+92516395" class="infoBox">92516395</a>
+            <a href="tel:+4792516395" class="infoBox">92516395</a>
             <div id="AlleInfo">
               <a href="mailto:subiraja786@gmail.com" class="infoBox">
-  subiraja786@gmail.com
-</a>
+                subiraja786@gmail.com
+              </a>
             </div>
             <div>
-              <div class="infoBox">Maria Dehlis vei 37</div>
+              <a
+                href="https://maps.app.goo.gl/8jmSyVJtvRzquwKb7"
+                class="infoBox"
+                >Maria Dehlis vei 37</a
+              >
             </div>
             <div>
               <div class="infoBox">10.02.09</div>
@@ -51,68 +54,88 @@
           </div>
         </div>
         <div id="HøyereSide">
-          <h2 class="Ting">Erfaring</h2>
           <div class="Erfaring">
-            <h3>Normal, Markveien - Jobb</h3>
-            <h4>April 2025 - Nå</h4>
-            <h6>
-              Jobber ved siden av skole og har ansvar for kundeservice,
-              varepåfylling og å opprettholde orden i butikken. Bidrar til
-              effektive daglige rutiner, samarbeid i team og sørger for at
-              kundene får en god handleopplevelse. Har utviklet gode ferdigheter
-              innen ansvar, struktur og kommunikasjon gjennom arbeidet.
-            </h6>
-          </div>
-          <div class="Erfaring">
-            <h3>Halal tøyen burger, Jens Bjelkes gate - Sommerjobb</h3>
-            <h4>Hver sommer siden 2023</h4>
-            <h6>
-              Jobber i familiebedrift med ansvar for kundeservice, håndtering av
-              daglige arbeidsoppgaver og støtte i den daglige driften. Bidrar
-              til et godt samarbeid i teamet og sørger for effektiv og
-              strukturert gjennomføring av arbeidsoppgaver. Stillingen har
-              styrket mine ferdigheter innen kommunikasjon, ansvar og service.
-            </h6>
+            <h2 class="Ting" onclick="toggle('erfaring')">Erfaring</h2>
+            <div id="erfaring" class="cvInfo">
+              <h3>Normal, Markveien - Jobb</h3>
+              <h4>April 2025 - Nå</h4>
+              <h6>
+                Jobber ved siden av skole og har ansvar for kundeservice,
+                varepåfylling og å opprettholde orden i butikken. Bidrar til
+                effektive daglige rutiner, samarbeid i team og sørger for at
+                kundene får en god handleopplevelse. Har utviklet gode
+                ferdigheter innen ansvar, struktur og kommunikasjon gjennom
+                arbeidet.
+              </h6>
+
+              <h3>Halal tøyen burger, Jens Bjelkes gate - Sommerjobb</h3>
+              <h4>Hver sommer siden 2023</h4>
+              <h6>
+                Jobber i familiebedrift med ansvar for kundeservice, håndtering
+                av daglige arbeidsoppgaver og støtte i den daglige driften.
+                Bidrar til et godt samarbeid i teamet og sørger for effektiv og
+                strukturert gjennomføring av arbeidsoppgaver. Stillingen har
+                styrket mine ferdigheter innen kommunikasjon, ansvar og service.
+              </h6>
+            </div>
           </div>
 
-          <h2 class="Ting">Utdannelse</h2>
           <div class="Utdannelse">
-            <a href="https://f21.vgs.no"><h3>FYRSTIKKALLÉEN VGS</h3></a>
+            <h2 class="Ting" onclick="toggle('utdannelse')">Utdannelse</h2>
+            <div id="utdannelse" class="cvInfo">
+              <a class="linker" href="https://f21.vgs.no"
+                ><h3>FYRSTIKKALLÉEN VGS</h3></a
+              >
 
-            <h6>2025-26 - Informasjonsteknologi og mediekommunikasjon (IM)</h6>
+              <h6>
+                2025-26 - Informasjonsteknologi og mediekommunikasjon (IM)
+              </h6>
+
+              <a class="linker" href="https://granstangen.osloskolen.no"
+                ><h3>GRANSTANGEN SKOLE</h3></a
+              >
+
+              <h6>2022-25 - Ungdomskole</h6>
+            </div>
           </div>
-          <div class="Utdannelse">
-            <a href="https://granstangen.osloskolen.no"><h3>GRANSTANGEN SKOLE</h3></a>
-            
-            <h6>2022-25 - Ungdomskole</h6>
-          </div>
-          <h2 class="Ting">Språk</h2>
+
           <div class="Språk">
-            <h3>Norsk</h3>
-            <h6>
-              Flytende, både muntlig og skriftlig. Bruker språket daglig gjennom
-              skole og arbeid.
-            </h3>
+            <h2 class="Ting" onclick="toggle('sprak')">Språk</h2>
+            <div id="sprak" class="cvInfo">
+              <h3 class="språket">Norsk</h3>
+              <h6>
+                Flytende, både muntlig og skriftlig. Bruker språket daglig
+                gjennom skole og arbeid.
+              </h6>
+
+              <h3 class="språket">Engelsk</h3>
+              <h6>
+                Meget gode ferdigheter, både muntlig og skriftlig. Brukes aktivt
+                gjennom teknologi, medier og skolearbeid.
+              </h6>
+
+              <h3 class="språket">Urdu</h3>
+              <h6>Morsmål med flytende muntlige ferdigheter</h6>
+            </div>
           </div>
-          <div class="Språk">
-            <h3>Engelsk</h3>
-            <h6>
-              Meget gode ferdigheter, både muntlig og skriftlig. Brukes aktivt
-              gjennom teknologi, medier og skolearbeid.
-            </h3>
-          </div>
-          <div class="Språk" h3>
-            <h3>Urdu</h3>
-            <h6>Morsmål med flytende muntlige ferdigheter</h3>
-          </div>
-          <h2 class="Ting">Ferdigheter</h2>
+
           <div class="Ferdigheter">
-            <h3>kompetanse</h3>
-            <h6>Jeg har grunnleggende kompetanse innen webutvikling og digitale verktøy. Gjennom skole og egen læring har jeg arbeidet med HTML og CSS for å utvikle nettsider, samt brukt GitHub til versjonskontroll. Jeg har også erfaring med enkel nettverksforståelse og videoredigering i DaVinci Resolve. Jeg er motivert for å utvikle ferdighetene mine videre innen IT og programmering.</h6>
+            <h2 class="Ting" onclick="toggle('ferdigheter')">Ferdigheter</h2>
+            <div id="ferdigheter" class="cvInfo">
+              <h6>
+                Jeg har grunnleggende kompetanse innen webutvikling og digitale
+                verktøy. Gjennom skole og egen læring har jeg arbeidet med HTML
+                og CSS for å utvikle nettsider, samt brukt GitHub til
+                versjonskontroll. Jeg har også erfaring med enkel
+                nettverksforståelse og videoredigering i DaVinci Resolve. Jeg er
+                motivert for å utvikle ferdighetene mine videre innen IT og
+                programmering.
+              </h6>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
-    <script src="program.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
