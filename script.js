@@ -1,5 +1,4 @@
-var btn = document.getElementById("DarkMode");
-
+let btn = document.getElementById("DarkMode");
 btn.onclick = function () {
   document.body.classList.toggle("darkmode");
 };
@@ -11,10 +10,11 @@ function scrollNed() {
 }
 
 function toggle(id) {
-  var alleBokser = document.querySelectorAll(".cvInfo");
+  let alleBokser = document.querySelectorAll(".cvInfo");
+  console.log(alleBokser);
   alleBokser.forEach(function (boks) {
-    boks.style.display = "none ";
+    boks.style.display = "none";
   });
-  var valgt = document.getElementById(id);
+  let valgt = document.getElementById(id);
   valgt.style.display = "block";
 }
